@@ -1,0 +1,387 @@
+
+@font-face {
+    font-family: "Bebas";
+    src: url("../fonts/BEBAS.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "StMarie";
+    src: url("../fonts/StMarie-Thin.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Calibri";
+    src: url("../fonts/calibri.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.header{
+    background:url('../img/header-bg.png');
+    /*background-position: right;*/
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin-top: 125px;
+    border-top:5px solid #fcba50;
+    border-bottom:5px solid #fcba50;
+    clear:both;
+}
+.nav{
+
+}
+.nav__cont{
+    background-color: #fff;
+    top:0;
+    position: fixed;
+    height: 115px;
+}
+.nav__logo{
+    padding-top: 10px;
+    float: left;
+    display: inline;
+}
+.nav__img{
+    margin-right: 50px;
+}
+.home{
+    overflow: hidden;
+    width: 54px; height: 49px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+.info{
+    overflow: hidden;
+    width: 24px; height: 46px;
+    background: url('../img/css_sprites.png') -10px -132px;
+}
+.blog{
+    width: 40px; height: 40px;
+    background: url('../img/css_sprites.png') -146px -10px;
+    overflow: hidden;
+}
+.contact{
+    overflow: hidden;
+    width: 49px; height: 33px;
+    background: url('../img/css_sprites.png') -10px -79px;
+}
+.work{
+    overflow: hidden;
+    width: 42px; height: 42px;
+    background: url('../img/css_sprites.png') -84px -10px;
+}
+.nav__list{
+    float: right;
+    list-style: none;
+    margin-left: 290px;
+}
+.nav__item{
+    margin-right: 35px;
+    margin-left: 35px;
+    font-size: 22px;
+    font-family: "Calibri";
+    color: rgb(158, 155, 155);
+    text-align: center;
+    display: inline-block;
+    transition: color .5s;
+}
+.nav__item:hover{
+    color:rgba(255, 175, 18, 0.702);
+}
+
+
+.item__img{
+    float: right;
+    margin-bottom: 5px;
+}
+
+.nav__logo p{
+    float: right;
+}
+.nav__logo--orange{
+    font-family:'Calibri';
+    font-weight: bold;
+    color: #fb9c06;
+    font-size: 37px;
+}
+.nav__logo--rabbit{
+    font-family:'BEBAS';
+    font-weight: bold;
+    color: #6e6d6b;
+    font-size: 37px;
+}
+
+.header__content{
+
+}
+.header__title{
+    font-family:'BEBAS';
+    font-size: 37px;
+}
+.header__title--one{
+    width: 327px;
+    padding: 7px 25px;
+    margin-top: 130px;
+    margin-left: 20px;
+    color:#fb9c06;
+    background-color: rgba(0,0,0, .69);
+    border:2px solid rgba(76,79,79,0.5);
+}
+.header__title--two{
+    padding:10px 28px 10px 29px;
+    width: 336px;
+    background-color: rgba(255, 175, 18, 0.702);
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border:2px solid rgba(255, 175, 18, 0.302);
+}
+
+/*articles*/
+
+.articles{
+    margin-bottom: -11px;
+    padding-bottom: 7px;
+    box-shadow: 0px 1px 5px 0px rgba(211, 210, 210, 0.75);
+}
+.articles__container{
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+.articles__container{
+    text-align: right;
+    height: 160px;
+    overflow: hidden;
+}
+.articles__article{
+    float: right;
+    width: 25%;
+    font-size: 15px;
+    font-family: "Calibri";
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    line-height: 1.544;
+}
+.article__container{
+
+    text-align: right;
+    padding-right: 42px;
+}
+.article__text{
+    text-align: left;
+}
+.article__more{
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(255, 156, 0);
+}
+
+.team{
+    margin-bottom: 35px;
+}
+.team::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.team__title{
+    text-align: center;
+    font-size: 40px;
+    font-family:'StMarie';
+    color: rgb(255, 156, 0);
+    text-decoration: underline;
+}
+.team__container{}
+.team__partner{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.partner__title{
+    font-size: 22px;
+    font-family: "Calibri";
+    color: rgb(51, 51, 51);
+    line-height: 1.544;
+    margin-bottom: 30px;
+}
+.partner__title--yellow{
+    color: rgb(255, 156, 0);
+}
+.partner__subtitle{
+    font-family: "Calibri";
+    font-weight: 300;
+    width: 275px;
+    line-height: 1.544;
+    text-align: left;
+    margin: 0 auto;
+}
+.partner__img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border:7px solid #ffb540;
+    margin-bottom: 25px;
+}
+
+.feedback::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.feedback__title{
+    text-align: center;
+    font-size: 40px;
+    font-family:'StMarie';
+    color: rgb(255, 156, 0);
+    text-decoration: underline;
+    margin-bottom: 65px;
+}
+.feedback__form{
+    padding-bottom: 120px;
+}
+.feedback__name::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.feedback__name{
+    margin-bottom: 35px;
+}
+.name__input{
+    float: right;
+    width: 90%;
+    outline: none;
+    background:rgba(247, 246, 245, 0.922);
+    box-shadow: inset 5px 2px 0px 0px rgba(210, 208, 207, 0.922);
+    height: 30px;
+    padding-top: 3px;
+    padding-left: 6px;
+}
+.name__label{
+    font-size: 24px;
+    font-family: "StMarie";
+    color: rgb(251, 156, 6);
+    float: left;
+}
+.feedback__email{
+    margin-bottom: 35px;
+}
+.feedback__email::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.email__input{
+    float: right;
+    width: 90%;
+    outline: none;
+    background:rgba(247, 246, 245, 0.922);
+    box-shadow: inset 5px 2px 0px 0px rgba(210, 208, 207, 0.922);
+    height: 30px;
+    padding-top: 3px;
+    padding-left: 6px;
+}
+.email__label{
+    font-size: 24px;
+    font-family: "StMarie";
+    color: rgb(251, 156, 6);
+    float: left;
+}
+
+
+.feedback__message::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.message__input{
+    padding: 0;
+    float: right;
+    width: 90%;
+    outline: none;
+    background:rgba(247, 246, 245, 0.922);
+    box-shadow: inset 5px 2px 0px 0px rgba(210, 208, 207, 0.922);
+    height: 90px;
+    padding-top: 3px;
+    padding-left: 6px;
+    margin-bottom: 20px;
+}
+.message__label{
+    font-size: 24px;
+    font-family: "StMarie";
+    color: rgb(251, 156, 6);
+    float: left;
+}
+input{
+    border:none;
+}
+textarea{
+    border:none;
+}
+input:focus ,
+textarea:focus{
+    box-shadow: inset 5px 2px 0px 0px rgba(251, 156, 6, 1);
+}
+.form__button{
+    font-size:30px;
+    font-family:'StMarie';
+    color:#fee6c1;
+    position:relative;
+    left:82%;
+    width:175px;
+    height:45px;
+    background-color:rgb(251, 156, 6);
+    margin-top:20px;
+    border:none;
+    border-bottom:solid 3px #cc830f;
+    cursor:pointer;
+}
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fb9c06;
+    border-bottom: 5px solid rgb(204, 131, 15);
+    position: absolute;
+    bottom: -17px;
+}
+
+.footer__title{
+    text-align: center;
+    font-size: 33px;
+    font-family: "StMarie";
+    color: rgb(255, 255, 255);
+    /*line-height: 0.702;*/
+
+}
